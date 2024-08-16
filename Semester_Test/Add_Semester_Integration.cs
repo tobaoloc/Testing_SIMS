@@ -9,9 +9,9 @@ using BlazorApp3.Data;
 using BlazorApp3.Models;
 using BlazorApp3.Components.Pages.SemestersPages;
 using Microsoft.AspNetCore.Components;
-using Testing_SIMS2;
-
-public class AddSemesterIntegrationTests : TestContext
+namespace Testing_SIMS2
+{
+    public class AddSemesterIntegrationTests : TestContext
 {
     public AddSemesterIntegrationTests()
     {
@@ -58,4 +58,5 @@ public class AddSemesterIntegrationTests : TestContext
         // Rollback the transaction
         await transaction.RollbackAsync();
     }
+}
 }
